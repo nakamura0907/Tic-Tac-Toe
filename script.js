@@ -8,7 +8,7 @@ const playerIcon = [
 let currentTurn = playerIcon[0];
 
 let isWin = false;
-const winNumber = [
+const winNumbers = [
   [1, 2, 3],
   [4, 5, 6],
   [7, 8, 9],
@@ -40,7 +40,7 @@ const addNumber = (target) => {
 }
 
 /**
- * 配列の中にwinNumberと一致する組み合わせがあるのか判定する
+ * 配列の中にwinNumbersと一致する組み合わせがあるのか判定する
  */
 const checkWin = () => {
   let target;
@@ -53,7 +53,7 @@ const checkWin = () => {
     icon = playerIcon[1];
   }
 
-  const result = winNumber.some((ary) => {
+  const result = winNumbers.some((ary) => {
     return ary.every((value) => {
       return target.includes(value)
     })
