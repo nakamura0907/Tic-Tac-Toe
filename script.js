@@ -110,4 +110,5 @@ document.getElementById("reset").addEventListener("click", () => {
   playerANumbers = [];
   playerBNumbers = [];
   isWin = false;
+  currentTurn = playerIcon[0];
 })
