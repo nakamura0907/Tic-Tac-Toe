@@ -1,0 +1,20 @@
+.button {
+  min-width: 64px;
+  min-height: 36px;
+  padding: 0 16px 0 16px;
+  color: white;
+  background: gray;
+  border-radius: 5px;
+  border: 0;
+  text-transform: uppercase;
+  box-shadow: 0px 4px 4px -1px rgba(0, 0, 0, 0.8);
+
+  &:hover {
+    box-shadow: none;
+    transform: translateY(4px);
+  }
+
+  &__danger {
+    background: red;
+  }
+}

@@ -14,6 +14,7 @@ const game = new Game(playerA, playerB);
  * ゲーム部分
  */
 document.querySelectorAll(".board__square").forEach((element) => {
+
   element.addEventListener("click", (event) => {
     const target = event.target;
 
@@ -36,6 +37,7 @@ document.querySelectorAll(".board__square").forEach((element) => {
       }
     }
   })
+  
 })
 
 document.getElementById("reset").addEventListener("click", () => {

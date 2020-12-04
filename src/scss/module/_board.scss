@@ -1,0 +1,11 @@
+.board {
+  margin-bottom: 30px;
+
+  &__square {
+    height: 100px;
+    width: 100px;
+    font-size: 1.4rem;
+    vertical-align: middle;
+    text-align: center;
+  }
+}
