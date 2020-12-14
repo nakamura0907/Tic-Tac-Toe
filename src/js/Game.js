@@ -85,6 +85,7 @@ class Game {
   restart() {
     this.#isWin = false;
     this.#currentPlayer = this.#playerA;
+    this.#isPlayerATurn = true;
   }
 }
 

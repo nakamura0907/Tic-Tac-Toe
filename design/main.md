@@ -11,7 +11,10 @@
   - square を player オブジェクトのアイコンで書き換える
   - ゲームの初期化
 
-## Todo
+## 課題
 
 - reset の修正
 - main 処理のリファクタリング
+- webpack の最適化
+- babel の最適化
+- typescript 化

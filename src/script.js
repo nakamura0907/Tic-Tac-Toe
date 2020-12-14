@@ -37,19 +37,15 @@ document.querySelectorAll(".board__square").forEach((element) => {
       }
     }
   })
-  
+
 })
 
 document.getElementById("reset").addEventListener("click", () => {
-  location.reload();
-  /**
-   * ○のターンでリセットすると二回○のターンになる
-   */
-  // game.restart();
-  // playerA.resetNumbers();
-  // playerB.resetNumbers();
-  // document.querySelectorAll(".board__square").forEach((element) => {
-  //   element.textContent = "";
-  // })
-  // document.getElementById("turn").textContent = playerA.getIcon();
+  game.restart();
+  playerA.resetNumbers();
+  playerB.resetNumbers();
+  document.querySelectorAll(".board__square").forEach((element) => {
+    element.textContent = "";
+  })
+  document.getElementById("turn").textContent = playerA.getIcon();
 })
